@@ -11,9 +11,6 @@ const Layout = ({ children }) => (
         <div className="links">
           <Link href="/">
             <a>Generate</a>
-          </Link>{' '}
-          <Link href="/docs">
-            <a>Docs</a>
           </Link>
         </div>
       </section>
