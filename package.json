@@ -1,0 +1,32 @@
+{
+  "name": "uuid.dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:astanciu/uuid.dev.git",
+  "author": "Alex Stanciu <alex@auth0.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.1",
+    "microrouter": "^3.1.3",
+    "next": "^8.0.3",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.3",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.8.3",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development next",
+    "build": "next build",
+    "start": "next start",
+    "api": "NODE_ENV=production yarn micro-dev -p 4000 ./api/uuid.js",
+    "deploy": "now && now alias"
+  },
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  }
+}
