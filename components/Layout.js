@@ -7,17 +7,16 @@ const Layout = ({ children }) => (
     <Header />
     <div className="page">
       <section>
-      {children}
-      <div className="links">
-        <Link href="/">
-          <a>Generate</a>
-        </Link>{' '}
-        <Link href="/docs">
-          <a>Docs</a>
-        </Link>
-      </div>
+        {children}
+        <div className="links">
+          <Link href="/">
+            <a>Generate</a>
+          </Link>{' '}
+          <Link href="/docs">
+            <a>Docs</a>
+          </Link>
+        </div>
       </section>
-      
     </div>
   </>
 );

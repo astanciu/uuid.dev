@@ -1,4 +1,5 @@
 const { send } = require('micro');
+
 module.exports = (req, res, uuid) => {
   const contentType = (req.headers['content-type'] || '').toLowerCase();
 
