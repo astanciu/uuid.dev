@@ -5,9 +5,6 @@ import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 
 const Index = props => {
-  if (props.ua.indexOf('curl') === 0){
-    return "hello curl"
-  }
   return (
     <Layout>
       <h1>UUID Generator</h1>
@@ -17,21 +14,25 @@ const Index = props => {
   );
 };
 
-Index.getInitialProps = async function({ req }) {
-  const ua = req ? req.headers['user-agent'] : navigator.userAgent
+Index.getInitialProps = async function({req, res}) {  
+  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
   const url = `${process.env.apiBaseUrl}/api`;
   const opts = {
     headers: {
       accept: 'application/json'
     }
   };
-  const res = await fetch(url, opts);
+  const result = await fetch(url, opts);
 
-  if (res.status !== 200) {
-    return { error: { status: res.status, message: res.statusText } };
+  if (result.status !== 200) {
+    return { error: { status: result.status, message: result.statusText } };
   }
 
-  const { uuid } = await res.json();
+  const { uuid } = await result.json();
+
+  if (userAgent.indexOf('curl') === 0){
+    return res.end(`${uuid}\n`)
+  }
 
   return { uuid,  ua};
 };
