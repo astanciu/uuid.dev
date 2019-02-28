@@ -1,24 +1,25 @@
 .uuid-container {
+    display: flex;
     border: 2px solid #86c0e8;
-    // padding: 20px 20px 20px 0px;
-    text-align: center;
+    margin: 0 auto;
     border-radius: 5px;
     background-color: #e8f1f3;
     font-size: 20px;
+    width: 600px;
 }
 
 .uuid-type {
     border-right: 2px solid #86c0e8;
     padding: 23px 20px;
-    display: inline-block;
 }
 
 .uuid-value {
-    display: inline-block;
+    flex-grow: 1;
     color: #585858;
     margin: 20px;
     padding: 5px;
     font-size: 18px;
     font-family: 'B612 Mono', monospace;
+    cursor: pointer;
 
 }

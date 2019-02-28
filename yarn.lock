@@ -1659,6 +1659,11 @@ cli-boxes@^1.0.0:
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
   integrity sha1-T6kXw+WclKAEzWH47lCdplFocUM=
 
+clipboard-polyfill@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/clipboard-polyfill/-/clipboard-polyfill-2.7.0.tgz#4f4344bb3405f88609ccf8ee2d445018da0e318f"
+  integrity sha512-JUQ9Q32xetbWG3e3tdYbP4uB13YeMz79AWg4SiPLVbu4s6pv2q70R8uXDtA8UD3f2BKQeTDD5ApoqRCs29RDlw==
+
 clipboardy@1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.2.3.tgz#0526361bf78724c1f20be248d428e365433c07ef"
