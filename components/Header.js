@@ -4,7 +4,7 @@ const Header = () => (
   <Head>
     <title>uuid.dev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-69050-17"
