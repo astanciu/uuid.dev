@@ -9,6 +9,7 @@ const Index = props => {
   return (
     <Layout>
       <h1>UUID Generator</h1>
+      <h2>You may use this generated UUID below, or use the UUID Generator via the API or command line (curl, httpie, wget, etc...)</h2>
       <UUID type="uuid/v4" value={props.uuid} />
       {props.error && props.error.message}
       <div className="links">
