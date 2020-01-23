@@ -4,7 +4,7 @@ const Header = () => (
   <Head>
     <title>UUID Generator</title>
     <meta name="description" content="Online UUID Generator with API and easy command line (CLI) usage." />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
     <script
