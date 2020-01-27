@@ -2,7 +2,6 @@ const { send } = require('micro');
 
 module.exports = (req, res, uuid) => {
   const contentType = (req.headers['accept'] || '').toLowerCase();
-
   switch (contentType) {
     case 'application/json':
       send(res, 200, { uuid });

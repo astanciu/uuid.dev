@@ -11,7 +11,6 @@ const api = async (req, res) => {
   const { name, namespace } = req.query;
 
   const uuid = generate(version, name, namespace);
-
   respond(req, res, uuid);
 };
 
