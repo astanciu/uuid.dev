@@ -17,7 +17,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.5",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.0",
     "uuid": "^3.3.2"
   },
   "scripts": {
