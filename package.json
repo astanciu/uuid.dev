@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.5.3",
     "clipboard-polyfill": "^2.7.0",
     "isomorphic-unfetch": "^3.0.0",
     "micro": "^9.3.3",
